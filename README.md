@@ -23,7 +23,7 @@ First I made a Python tool to download a list with all games on the Steam gaming
 
 * [GetSteamGames](https://github.com/PatrickDegner/GetSteamGames) - found my repository
 
-![image](https://user-images.githubusercontent.com/108484798/189935791-2e08f432-70fd-4291-b14d-c861950ec14a.png)
+![image](https://user-images.githubusercontent.com/108484798/189935791-2e08f432-70fd-4291-b14d-c861950ec14a.png) <br>
 
 Now i have needed a place to run this Script.
 1. So let's create an Azure Virtual Machine in the Cloud.\
@@ -34,7 +34,8 @@ I have chosen a small size with Windows to just run the app and collect the data
 \
 Here I used the system assigned managed identity to be able to use azcopy identy on the Virtual Machine\
 You need to assign Permissions to your Data Lake ressource. "Storage Blob Data Contributor"
-![image](https://user-images.githubusercontent.com/108484798/189943477-01815de3-ac54-45ab-afde-7225b09c6bd8.png)
+![image](https://user-images.githubusercontent.com/108484798/189943477-01815de3-ac54-45ab-afde-7225b09c6bd8.png) 
+<br>
 
 
 But where to Store the data in the cloud to work with it? A VM Disk is not the best choice.
@@ -42,7 +43,8 @@ But where to Store the data in the cloud to work with it? A VM Disk is not the b
 2. A storage is needed which i can use for the full ELT process. Yes its Azure Data Lake Gen2\
 https://docs.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account \
 There is also a good tool to help with working on storage. (Azure Storage Explorer)\
-![image](https://user-images.githubusercontent.com/108484798/189942304-b47531ae-41fb-471a-88d2-fec135e532bb.png)
+![image](https://user-images.githubusercontent.com/108484798/189942304-b47531ae-41fb-471a-88d2-fec135e532bb.png) 
+<br>
 
 
 How to get my data into the Data Lake ?\
@@ -140,6 +142,7 @@ But can all this be automated? Sure! with Azure Data Factory orchestration.
 7. In Data Factory I created 4 Pipelines. 3 for ELT and 1 to run the pipelines together.\
 Let me show you what I did here.\
 ![image](https://user-images.githubusercontent.com/108484798/189960372-96aefe49-a9c4-4069-86d7-54bad6710cd2.png)
+ <br>
 
 Remember the Powershell script on the Virtual Machine? I made a Web activity for this.\
 https://docs.microsoft.com/en-us/azure/data-factory/control-flow-web-activity
@@ -150,6 +153,7 @@ In url I have put:
 https://management.azure.com/subscriptions/<subscription id>/resourceGroups/<resource name>/providers/Microsoft.Compute/virtualMachines/<VM name>/runCommand?api-version=2021-07-01
 ```
 ![image](https://user-images.githubusercontent.com/108484798/189961715-171a214b-b778-4777-ad61-aa86952fdead.png)
+ <br>
 
 When I run this now, the activity triggers the Powershell script and the file will be put in the raw db folder.
 
@@ -167,7 +171,7 @@ https://docs.microsoft.com/en-us/azure/data-factory/transform-data-using-databri
 Now its time for the Pipeline to run fully automatically.
 Create a scheduled trigger:
 ![image](https://user-images.githubusercontent.com/108484798/189964016-7629b742-fc14-40be-8286-1f9c083014a1.png)
-
+ <br>
 
 Some insight in the data maybe?
 
