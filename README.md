@@ -177,7 +177,7 @@ I have used a Personal Access Token in Databricks\
 Just go to Account Settings in Databricks and find this Button\
 ![image](https://user-images.githubusercontent.com/108484798/189965281-64573c17-3c3b-46a2-9173-194a928ccbd0.png)\
 Now use the Token in Power BI as you see in the image below.\
-![image](https://user-images.githubusercontent.com/108484798/189964904-ac222f5b-6369-4cb6-afc0-d2e947477707.png)\
+![image](https://user-images.githubusercontent.com/108484798/189964904-ac222f5b-6369-4cb6-afc0-d2e947477707.png)
 
 
 Following here will be Power BI screenshots and informations.\
