@@ -148,7 +148,7 @@ Remember the Powershell script on the Virtual Machine? I made a Web activity for
 https://docs.microsoft.com/en-us/azure/data-factory/control-flow-web-activity
 
 The contribution role is needed for Data Factory on the Virtual Machine.\
-In the Url field I have insurted:
+In the URL field I have insurted:
 ```sh
 https://management.azure.com/subscriptions/<subscription id>/resourceGroups/<resource name>/providers/Microsoft.Compute/virtualMachines/<VM name>/runCommand?api-version=2021-07-01
 ```
