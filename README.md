@@ -184,5 +184,11 @@ Now use the Token in Power BI as you see in the image below.\
 ![image](https://user-images.githubusercontent.com/108484798/189964904-ac222f5b-6369-4cb6-afc0-d2e947477707.png)
 
 
-Following here will be Power BI screenshots and informations.\
-Coming soon....
+Some simple insight made with Power BI Desktop.
+Since 2010 we got around 61000 Games on Steam. 
+In 2021 over 11000 games were released.
+10 Years ago in 2011 it were only 271 games.
+9300 games so far in 2022. Can we top 2021?
+![image](https://user-images.githubusercontent.com/108484798/193343044-405b7c3e-12b6-45c4-a518-1b8393247804.png)
+
+
