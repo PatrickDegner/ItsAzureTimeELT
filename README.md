@@ -9,7 +9,7 @@ I will go through this step by step so you can follow along.
 ### Tools used:
 - [Azure Cloud](https://azure.microsoft.com/)
 - [Azure Virtual Machine](https://azure.microsoft.com/en-us/services/virtual-machines/)
-- [Azure Databrick](https://azure.microsoft.com/en-us/products/databricks/#overview)
+- [Azure Databricks](https://azure.microsoft.com/en-us/products/databricks/#overview)
 - [Azure Data Lake](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/)
 - [Azure Data Factory](https://azure.microsoft.com/en-us/products/data-factory/)
 - [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
